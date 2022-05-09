@@ -49,8 +49,8 @@ public class Handler implements Runnable{
             while (true){
                String command = is.readUTF();
                 System.out.println("Received command " + command);
-                if(command.equals("#upload# ")){
-                     String     fileName = is.readUTF();
+                if(command.equals("#upload#")){
+                     String fileName = is.readUTF();
                      long size = is.readLong();
                      try (FileOutputStream fos = new FileOutputStream(
                              currentDir.resolve(fileName).toFile())){
