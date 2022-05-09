@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="332.0" prefWidth="482.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.geekbrains.cloud_app_client.RegisterController">
+
+        <children>
+            <Label layoutX="152.0" layoutY="44.0" text="New user registration">
+                <font>
+                    <Font name="Courier New" size="15.0" />
+                </font>
+            </Label>
+            <Label layoutX="96.0" layoutY="105.0" text="Name">
+                <font>
+                    <Font name="Courier New" size="14.0" />
+                </font>
+            </Label>
+            <Label layoutX="93.0" layoutY="140.0" text="Login">
+                <font>
+                    <Font name="Courier New" size="14.0" />
+                </font>
+            </Label>
+            <Label layoutX="84.0" layoutY="178.0" text="Password">
+                <font>
+                    <Font name="Courier New" size="14.0" />
+                </font>
+            </Label>
+            <Label layoutX="67.0" layoutY="215.0" text="Repeat password">
+                <font>
+                    <Font name="Courier New" size="14.0" />
+                </font>
+            </Label>
+            <TextField fx:id="regNameField" layoutX="215.0" layoutY="101.0" prefHeight="26.0" prefWidth="201.0" />
+            <TextField fx:id="regLoginField" layoutX="216.0" layoutY="136.0" prefHeight="26.0" prefWidth="202.0" />
+            <PasswordField fx:id="regPasswordField" layoutX="217.0" layoutY="175.0" prefHeight="26.0" prefWidth="202.0" />
+            <PasswordField fx:id="regRepeatPasswordField" layoutX="217.0" layoutY="211.0" prefHeight="26.0" prefWidth="202.0" />
+            <Button layoutX="186.0" layoutY="275.0" mnemonicParsing="false" onAction="#createNewUser" prefHeight="26.0" prefWidth="102.0" text="OK" />
+        </children>
+</AnchorPane>
+

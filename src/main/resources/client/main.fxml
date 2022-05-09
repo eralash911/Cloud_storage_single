@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="416.0"
+      prefWidth="600.0"
+      xmlns="http://javafx.com/javafx/17"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="client.Controller"
+>
+   <children>
+      <MenuBar>
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <HBox prefHeight="319.0" prefWidth="600.0">
+         <children>
+            <ListView fx:id="serverFiles" prefHeight="305.0" prefWidth="299.0" />
+            <ListView fx:id="clientFiles" prefHeight="305.0" prefWidth="301.0" />
+         </children>
+      </HBox>
+      <AnchorPane prefHeight="81.0" prefWidth="600.0">
+         <children>
+            <Label layoutX="117.0" layoutY="30.0" prefHeight="17.0" prefWidth="65.0" text="Server files" />
+            <Label layoutX="411.0" layoutY="31.0" prefHeight="17.0" prefWidth="65.0" text="Client files" />
+            <Button layoutX="218.0" layoutY="39.0" mnemonicParsing="false" text="Upload" onAction="#upload" />
+            <Button layoutX="324.0" layoutY="39.0" mnemonicParsing="false" text="Download" onAction="#download"/>
+            <TextField layoutY="2.0" prefHeight="25.0" prefWidth="266.0" />
+            <TextField layoutX="300.0" layoutY="2.0" prefHeight="25.0" prefWidth="260.0" />
+            <Button layoutX="266.0" mnemonicParsing="false" text="..." />
+            <Button layoutX="560.0" layoutY="2.0" mnemonicParsing="false" text="..." />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

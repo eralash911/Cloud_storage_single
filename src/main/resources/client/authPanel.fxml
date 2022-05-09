@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="loginPanel" prefHeight="205.0" prefWidth="313.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.geekbrains.cloud_app_client.AuthController">
+
+        <Button layoutX="73.0" layoutY="164.0" mnemonicParsing="false" onAction="#sendAuth" text="Sign In" />
+        <Button layoutX="152.0" layoutY="165.0" mnemonicParsing="false" onAction="#register" text="Sign Up" />
+        <TextField fx:id="loginField" layoutX="99.0" layoutY="59.0" prefHeight="26.0" prefWidth="173.0" />
+        <Label layoutX="23.0" layoutY="63.0" text="Login" />
+        <Label layoutX="20.0" layoutY="102.0" text="Password" />
+        <PasswordField fx:id="passwordField" layoutX="99.0" layoutY="98.0" prefHeight="26.0" prefWidth="174.0" />
+        <Label layoutX="99.0" layoutY="25.0" text="Authorization">
+         <font>
+            <Font name="Courier New" size="16.0" />
+         </font></Label>
+        <Label fx:id="labelUserNotFound" layoutX="9.0" layoutY="136.0" prefHeight="18.0" prefWidth="304.0" text="Label" visible="false" />
+
+</AnchorPane>

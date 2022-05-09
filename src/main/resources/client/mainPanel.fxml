@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="444.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.geekbrains.cloud_app_client.MainController">
+  <VBox fx:id="mainPanel" prefHeight="418.0" prefWidth="807.0">
+    <children>
+      <MenuBar prefHeight="14.0" prefWidth="800.0" VBox.vgrow="NEVER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="New" />
+              <MenuItem mnemonicParsing="false" text="Open…" />
+              <Menu mnemonicParsing="false" text="Open Recent" />
+              <SeparatorMenuItem mnemonicParsing="false" />
+              <MenuItem mnemonicParsing="false" text="Close" />
+              <MenuItem mnemonicParsing="false" text="Save" />
+              <MenuItem mnemonicParsing="false" text="Save As…" />
+              <MenuItem mnemonicParsing="false" text="Revert" />
+              <SeparatorMenuItem mnemonicParsing="false" />
+              <MenuItem mnemonicParsing="false" text="Preferences…" />
+              <SeparatorMenuItem mnemonicParsing="false" />
+              <MenuItem mnemonicParsing="false" text="Quit" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About MyHelloApp" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="393.0" prefWidth="845.0" VBox.vgrow="ALWAYS">
+        <children>
+          <TableView fx:id="clientFiles" layoutX="423.0" layoutY="72.0" prefHeight="318.0" prefWidth="381.0">
+          </TableView>
+          <Label fx:id="labelUserLogin" layoutX="14.0" layoutY="23.0" prefHeight="18.0" prefWidth="211.0" text="Label" textAlignment="CENTER" />
+          <Label layoutX="172.0" layoutY="50.0" text="Server" />
+          <Label layoutX="597.0" layoutY="50.0" text="Client" />
+          <Button layoutX="387.0" layoutY="178.0" mnemonicParsing="false" onAction="#upload" prefHeight="26.0" prefWidth="34.0" text="&lt;" />
+          <Button layoutX="387.0" layoutY="235.0" mnemonicParsing="false" onAction="#downLoad" prefHeight="26.0" prefWidth="34.0" text="&gt;" />
+          <Button layoutX="424.0" layoutY="40.0" mnemonicParsing="false" onAction="#back" text="Back" />
+          <TableView fx:id="serverFiles" layoutX="3.0" layoutY="72.0" prefHeight="318.0" prefWidth="381.0">
+          </TableView>
+        </children>
+      </AnchorPane>
+    </children>
+  </VBox>
+</AnchorPane>
