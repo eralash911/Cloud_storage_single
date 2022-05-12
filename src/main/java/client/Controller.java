@@ -69,11 +69,7 @@ public class Controller implements Initializable {
         serverFiles.getItems().addAll(list);
     }
 
-    private List<FileInfo> getClientFiles() throws IOException {
-       return Files.list(baseDir)
-                .map(FileInfo::new)
-                .collect(Collectors.toList());
-    }
+
 
     private List<String>getFilesNames() {
         try {
@@ -90,23 +86,6 @@ public class Controller implements Initializable {
     public void initialize(URL location, ResourceBundle resources) {
         try {
             baseDir = Paths.get(System.getProperty("user.home"));
-//            clientFiles.setCellFactory(list -> new ListCell<FileInfo>(){
-//                @Override
-//                protected void updateItem(FileInfo item, boolean empty) {
-//
-//                    if (item != null && !empty) {
-//                        String text = item.getFileName();
-//                        if (item.isDirectory()) {
-//                            text += " DIR";
-//                        } else {
-//                            text += item.getSize() + " bytes";
-//                        }
-//                        setText(text);
-//                    }else {
-//                        setText("");
-//                    }
-//                }
-//            });
             clientFiles.getItems().addAll(getFilesNames());
             clientFiles.setOnMouseClicked(event -> {
                 if(event.getClickCount() == 2){
@@ -135,16 +114,10 @@ public class Controller implements Initializable {
         os.writeObject(new FileRequest(file));
     }
 
-//    public void upload(ActionEvent actionEvent) throws IOException {
-//       String file = clientFiles.getSelectionModel().getSelectedItems().toString();
-//        Path filePath = baseDir.resolve(file);
-//        os.writeObject(new FileMessage(filePath));
-//
-//    }
+
     public void upload(ActionEvent actionEvent) throws IOException {
         String file = clientFiles.getSelectionModel().getSelectedItem();
         Path filePath = baseDir.resolve(file);
-//        System.out.println(filePath.toString());
         os.writeObject(new FileMessage(filePath));
     }
 }
