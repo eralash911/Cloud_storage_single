@@ -38,9 +38,9 @@
           <Label fx:id="labelUserLogin" layoutX="14.0" layoutY="23.0" prefHeight="18.0" prefWidth="211.0" text="Label" textAlignment="CENTER" />
           <Label layoutX="172.0" layoutY="50.0" text="Server" />
           <Label layoutX="597.0" layoutY="50.0" text="Client" />
-          <Button layoutX="387.0" layoutY="178.0" mnemonicParsing="false" onAction="#upload" prefHeight="26.0" prefWidth="34.0" text="&lt;" />
-          <Button layoutX="387.0" layoutY="235.0" mnemonicParsing="false" onAction="#downLoad" prefHeight="26.0" prefWidth="34.0" text="&gt;" />
-          <Button layoutX="424.0" layoutY="40.0" mnemonicParsing="false" onAction="#back" text="Back" />
+          <Button layoutX="387.0" layoutY="178.0" mnemonicParsing="false"  prefHeight="26.0" prefWidth="34.0" text="&lt;" />
+          <Button layoutX="387.0" layoutY="235.0" mnemonicParsing="false"  prefHeight="26.0" prefWidth="34.0" text="&gt;" />
+          <Button layoutX="424.0" layoutY="40.0" mnemonicParsing="false" text="Back" />
           <TableView fx:id="serverFiles" layoutX="3.0" layoutY="72.0" prefHeight="318.0" prefWidth="381.0">
           </TableView>
         </children>
