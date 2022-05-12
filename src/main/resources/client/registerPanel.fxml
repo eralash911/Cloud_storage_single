@@ -36,7 +36,7 @@
             <TextField fx:id="regLoginField" layoutX="216.0" layoutY="136.0" prefHeight="26.0" prefWidth="202.0" />
             <PasswordField fx:id="regPasswordField" layoutX="217.0" layoutY="175.0" prefHeight="26.0" prefWidth="202.0" />
             <PasswordField fx:id="regRepeatPasswordField" layoutX="217.0" layoutY="211.0" prefHeight="26.0" prefWidth="202.0" />
-            <Button layoutX="186.0" layoutY="275.0" mnemonicParsing="false" onAction="#createNewUser" prefHeight="26.0" prefWidth="102.0" text="OK" />
+            <Button layoutX="186.0" layoutY="275.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="102.0" text="OK" />
         </children>
 </AnchorPane>
 
