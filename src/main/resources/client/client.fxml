@@ -4,19 +4,19 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cloud_app_client.Controller">
+<AnchorPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" >
     <AnchorPane fx:id="mainPanel" prefHeight="400.0" prefWidth="600.0" visible="false">
         <ListView fx:id="serverFiles" layoutX="14.0" layoutY="61.0" prefHeight="320.0" prefWidth="234.0" />
         <ListView fx:id="clientFiles" layoutX="346.0" layoutY="61.0" prefHeight="320.0" prefWidth="240.0" />
-        <Button layoutX="259.0" layoutY="138.0" mnemonicParsing="false" onAction="#upload" prefHeight="27.0" prefWidth="75.0" text="&lt;" />
-        <Button layoutX="261.0" layoutY="207.0" mnemonicParsing="false" onAction="#downLoad" prefHeight="27.0" prefWidth="75.0" text="&gt;" />
+        <Button layoutX="259.0" layoutY="138.0" mnemonicParsing="false"  prefHeight="27.0" prefWidth="75.0" text="&lt;" />
+        <Button layoutX="261.0" layoutY="207.0" mnemonicParsing="false"  prefHeight="27.0" prefWidth="75.0" text="&gt;" />
         <Label layoutX="105.0" layoutY="34.0" prefHeight="18.0" prefWidth="49.0" text="Server" />
         <Label layoutX="444.0" layoutY="35.0" prefHeight="18.0" prefWidth="50.0" text="Client" />
         <Label fx:id="labelUserLogin" layoutX="28.0" layoutY="21.0" text="Label" />
     </AnchorPane>
     <AnchorPane fx:id="loginPanel" layoutX="132.0" layoutY="82.0" prefHeight="198.0" prefWidth="292.0" visible="true">
-        <Button layoutX="73.0" layoutY="149.0" mnemonicParsing="false" onAction="#sendAuth" text="Sign In" />
-        <Button layoutX="152.0" layoutY="149.0" mnemonicParsing="false" onAction="#register" text="Sign Up" />
+        <Button layoutX="73.0" layoutY="149.0" mnemonicParsing="false"  text="Sign In" />
+        <Button layoutX="152.0" layoutY="149.0" mnemonicParsing="false"  text="Sign Up" />
         <TextField fx:id="loginField" layoutX="99.0" layoutY="46.0" />
         <Label layoutX="35.0" layoutY="50.0" text="Login" />
         <Label layoutX="35.0" layoutY="90.0" text="Password" />
@@ -55,7 +55,7 @@
             <TextField fx:id="regLoginField" layoutX="264.0" layoutY="158.0" prefHeight="26.0" prefWidth="202.0" />
             <PasswordField fx:id="regPasswordField" layoutX="264.0" layoutY="197.0" prefHeight="26.0" prefWidth="202.0" />
             <PasswordField fx:id="regRepeatPasswordField" layoutX="264.0" layoutY="233.0" prefHeight="26.0" prefWidth="202.0" />
-            <Button layoutX="232.0" layoutY="296.0" mnemonicParsing="false" onAction="#createNewUser" prefHeight="26.0" prefWidth="102.0" text="OK" />
+            <Button layoutX="232.0" layoutY="296.0" mnemonicParsing="false"  prefHeight="26.0" prefWidth="102.0" text="OK" />
         </children>
     </AnchorPane>
 
